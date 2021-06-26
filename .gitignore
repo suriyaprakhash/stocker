@@ -1,0 +1,6 @@
+.idea
+__pycahce__/*
+
+test_data/*
+lib/*
+Pipfile.lock
