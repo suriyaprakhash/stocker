@@ -34,7 +34,7 @@ def history(no_of_days, interval):
 def fit():
     open_price_list = []
     close_price_list = []
-    hist_df = history('5d', '1d')
+    hist_df = history('50d', '1d')
     train_hist_df = hist_df.head(len(hist_df) - 1)
     for ind in train_hist_df.index:
         # day_list.append(hist_df['Date'][ind])
@@ -43,7 +43,7 @@ def fit():
     print(open_price_list)
     print(close_price_list)
     learn(open_price_list, close_price_list)
-    print(predict([[270]]))
+    print(predict([[266.23]]))
 
 
 def buy_and_sell_same_day():
